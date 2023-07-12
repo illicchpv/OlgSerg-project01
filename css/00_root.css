@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'msaR'; /* sans-serif */
+  src: url('../fonts/MontserratAlternates-Regular.ttf');
+}
+@font-face {
+  font-family: 'msaR1'; /* sans-serif */
+  src: url('../fonts/MontserratAlternates-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'msaR2'; /* sans-serif */
+  src: url('../fonts/MontserratAlternates-Bold.ttf');
+}
+@font-face {
+  font-family: 'msaI'; /* sans-serif */
+  src: url('../fonts/MontserratAlternates-Italic.ttf');
+}
+
+:root{
+  --trt: 0.5s; /* var(--trt) */
+}
+
+body{
+  font-family: msaR;
+  font-size: 24px;
+}
