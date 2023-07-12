@@ -1,0 +1,58 @@
+.box {
+    width: 1366px;
+    height: 716px;
+    position: relative;
+    margin: auto;
+}
+
+.allSettings {
+    width: 1366px;
+    height: 690px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: white;
+    border-radius: 20px;
+    border: 0.50px #004DC0 solid
+}
+
+.header {
+    width: 653px;
+    left: 23px;
+    top: 23px;
+    position: absolute;
+    color: #004DC0;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 29px;
+    word-wrap: break-word
+}
+
+.hzMaine {
+    width: 33px;
+    height: 33px;
+    left: 1306px;
+    top: 22px;
+    position: absolute
+}
+
+.hzSon1 {
+    width: 13.81px;
+    height: 6.91px;
+    left: 9.97px;
+    top: 20.49px;
+    position: absolute;
+    border: 0.50px #004DC0 solid
+}
+
+.hzSon2 {
+    width: 33px;
+    height: 33px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: white;
+    border-radius: 9999px;
+    border: 0.50px #004DC0 solid
+}
+
