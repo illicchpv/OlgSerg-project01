@@ -3,3 +3,9 @@
 проект на github
   https://github.com/illicchpv/OlgSerg-project01
   
+
+public URL
+  https://illicchpv.github.io/OlgSerg-project01/pg01.html
+
+
+
