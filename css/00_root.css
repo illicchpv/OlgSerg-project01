@@ -3,15 +3,15 @@
   src: url('../fonts/MontserratAlternates-Regular.ttf');
 }
 @font-face {
-  font-family: 'msaR1'; /* sans-serif */
+  font-family: 'msaR1'; /* sans-serif SemiBold  */
   src: url('../fonts/MontserratAlternates-SemiBold.ttf');
 }
 @font-face {
-  font-family: 'msaR2'; /* sans-serif */
+  font-family: 'msaR2'; /* sans-serif  Bold */
   src: url('../fonts/MontserratAlternates-Bold.ttf');
 }
 @font-face {
-  font-family: 'msaI'; /* sans-serif */
+  font-family: 'msaI'; /* sans-serif  Italic */
   src: url('../fonts/MontserratAlternates-Italic.ttf');
 }
 
@@ -19,7 +19,19 @@
   --trt: 0.5s; /* var(--trt) */
 }
 
+html{
+  font-size: 10px;
+}
+
 body{
   font-family: msaR;
-  font-size: 24px;
+  font-size: 1.6rem;
+  overflow-x: hidden;
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 1600px;
+  padding-left: 5px;
+  padding-right: 5px;
 }

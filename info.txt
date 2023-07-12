@@ -1,3 +1,6 @@
+ДОБАВЛЯЕМ В КОНЕЦ ФАЙЛА
+=======================
+
 Тег <wbr> указывает браузеру место, где допускается делать перенос строки
 
 проект на github
@@ -8,4 +11,22 @@ public URL
   https://illicchpv.github.io/OlgSerg-project01/pg01.html
 
 
+Favicon Generator. For real.
+  https://realfavicongenerator.net/
 
+нужен более качественный logoO1
+  img\logotype\logoO1.png 
+
+семантика - "читаемость" сайта поисковыми роботами.
+  https://www.youtube.com/embed/0lxU2YFhdz0?modestbranding=1
+  h1 - один 
+  h... использовать
+  header, nav, footer, aside, main, section, article
+  <header
+          <nav
+  <aside	<main
+  ...       <section
+            <article
+            ...
+          ...
+  <footer 

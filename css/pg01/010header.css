@@ -1,0 +1,152 @@
+.header{
+  padding-top: 20px;
+  width: 100vw;
+  margin-left: calc((100% - 100vw)/2);
+  padding-left: calc((100vw - 100%)/2);
+  padding-right: calc((100vw - 100%)/2);
+  box-sizing: border-box;
+  /* background-color: #E1F1FE; */
+  background-image: url(../../img/top_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.header__infoRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  .logo {
+    /* flex-basis: 50%; */
+    background-image: url(../../img/logotype/logotype.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 413.943px;
+    height: 88.79px;
+    flex-shrink: 0;
+  }
+  .header__infoBlock {
+    flex-basis: 50%;
+    display: flex;
+    gap: 3px;
+    justify-content: space-between;
+    align-items: center;
+  }
+    .header__infoPhone {
+      position: relative;
+    }
+    .header__infoPhone::before{
+      content: '';
+      position: absolute;
+      display: block;
+      background-image: url(../../img/tel_trubka.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+  
+      width: 31px; height: 31px;
+      left: -45px; top:10px;
+    }
+      .header__infoPhoneLabel {
+        color: #000;
+        font-size: 14px;
+        font-weight: 400;
+      }
+      .header__infoPhoneNumber a{
+        margin-top: 5px;
+        color: #026AB6;
+        font-family: msaR1;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        white-space:nowrap;
+      }
+      .header__infoPhoneWorkTime {
+        margin-top: 3px;
+        color: #959595;
+        font-size: 12px;
+        font-weight: 600;
+      }
+    .header__infoSocial {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+      .header__infoSocialItem a{
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: transparent;
+        width: 43px; height: 43px;
+      }
+      .social_wk {
+        background-image: url(../../img/social_wk.png);
+      }
+      .social_ok {
+        background-image: url(../../img/social_ok.png);
+      }
+      .social_wa {
+        background-image: url(../../img/social_wa.png);
+      }
+      .social_tg {
+        background-image: url(../../img/social_tg.png);
+      }
+    .header__infoBtnEnter a{
+      display: inline-flex;
+      padding: 20px 30px 20px 30px;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 10px;
+
+      border-radius: 35px;
+      background: linear-gradient(180deg, #00A0E3 0%, #004DC0 100%);
+      box-shadow: 0px 10px 20px 0px rgba(0, 160, 227, 0.30);  
+
+      color: #FFF;
+      font-family: msaR1;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;    
+      cursor: pointer;  
+      text-decoration: none;
+      white-space:nowrap;
+    }
+
+.header__navRow {
+  margin-top: 40px;
+}
+.navigation {
+}
+.navigation__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 37px;
+  padding-bottom: 32px;
+}
+.navigation__item {
+  list-style: none;
+}
+.navigation__item a{
+  display: inline-block;
+  line-height: 22px;
+  text-decoration: none;
+  color: #004DC0;
+  font-family: msaR1;
+  font-size: 18px;
+  font-weight: 600;
+}
+.blueLine100 {
+  width: 100vw;
+  /* margin-left: calc((100% - 100vw)/2);
+  padding-left: calc((100vw - 100%)/2);
+  padding-right: calc((100vw - 100%)/2); */
+
+  height: 1px;
+  background-color: #00A6E8;
+  position: absolute;
+  bottom: 10px;
+  left: calc((100vw - 100%)/2);
+}
