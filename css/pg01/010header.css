@@ -25,6 +25,9 @@
     height: 88.79px;
     flex-shrink: 0;
   }
+  .footer .logo{
+    background-image: url(../../img/logotype/logotype2.png);
+  }
   .header__infoBlock {
     flex-basis: 50%;
     display: flex;
@@ -121,8 +124,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 5px;
   padding: 0 37px;
   padding-bottom: 32px;
+  margin-top: 60px;
+}
+
+.navigation__list.navigation__list_col{
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: start;
 }
 .navigation__item {
   list-style: none;
@@ -135,13 +146,18 @@
   font-family: msaR1;
   font-size: 18px;
   font-weight: 600;
+  white-space:nowrap;
+}
+.footer .navigation__list li:first-child{
+  display: none;
+}
+.footer .navigation__list a{
+  font-size: 16px;
+  font-weight: 600;
+  min-width: 144px;
 }
 .blueLine100 {
   width: 100vw;
-  /* margin-left: calc((100% - 100vw)/2);
-  padding-left: calc((100vw - 100%)/2);
-  padding-right: calc((100vw - 100%)/2); */
-
   height: 1px;
   background-color: #00A6E8;
   position: absolute;
