@@ -30,6 +30,7 @@
   <link rel="stylesheet" href="css/pg01/010header.css">
   <!-- <link rel="stylesheet" href="css/pg01/020services.css"> -->
   <link rel="stylesheet" href="css/pg01/040contact.css">
+  <link rel="stylesheet" href="css/pg01/050footer.css">
 
   <script src="./js/index.js" defer></script>
   <script src="./js/pg01/pg01.js" defer></script>
@@ -107,18 +108,71 @@
       </article>
     </section>
 
-    <!-- Наши контакты -->
-    <section>
-      <article><!-- контакты -->
+    <div class="containerExt">
+      <div class="container">
+        <!-- Наши контакты -->
+        <section>
+          <article class="contacts" style="margin-top: -16px;"><!-- контакты //непонял откуда отступ :( -->
+            <div class="contacts_form">
+              contacts_form
+            </div>
+            <div class="contacts_map">
+              contacts_map
+            </div>
+          </article>
+        </section>
+      </div>
+    </div>
 
-      </article>
-    </section>
   </main>
 
-  <!-- подвал -->
-  <footer>
+  <div class="container">
+    <!-- подвал -->
+    <footer class="footer">
 
-  </footer>
+      <div class="logoBlock">
+        <div class="logo"></div>
+        <div class="copyr">Все права защищены © ООО «Космодент», 2018-2022</div>
+        <div class="license"><a class="linkInText" href="#">Лицензия</a></div>
+      </div>
+
+      <ul class="navigation__list navigation__list_col">
+        <li class="navigation__item"><a href="#">Главная</a></li>
+        <li class="navigation__item"><a href="#">О клинике</a></li>
+        <li class="navigation__item"><a href="#">Услуги</a></li>
+        <li class="navigation__item"><a href="#">Врачи</a></li>
+        <li class="navigation__item"><a href="#">Фото работ</a></li>
+        <li class="navigation__item"><a href="#">Статьи</a></li>
+        <li class="navigation__item"><a href="#">Отзывы</a></li>
+        <li class="navigation__item"><a href="#">Контакты</a></li>
+      </ul>
+
+      <div class="warningInfo">
+        <div class="warningInfo__item">Возможны противопоказания к применению. Необходима консультация врача.</div>
+        <div class="warningInfo__item"><a class="linkInText" href="#">Политика конфиденциальности</a></div>
+        <div class="warningInfo__item">
+          Этот сайт защищен reCAPTCHA, и применяются
+          <a class="linkInText" href="#">Политика конфиденциальности и Условия использования Google</a>
+        </div>
+      </div>
+
+      <div class="payCards">
+        <div class="payCards__Title">Принимаем к оплате</div>
+        <div class="payCards__card payCards__card_master"><a href="#"></a></div>
+        <div class="payCards__card payCards__card_visa"><a href="#"></a></div>
+        <div class="payCards__card payCards__card_mir"><a href="#"></a></div>
+      </div>
+
+      <div class="pageStatistic"><a class="linkInText" href="#"></a></div>
+
+      <div class="designStudio">
+        <div class="designStudio__logo"></div>
+        <div class="designStudio__info"><a class="linkInText" href="#">Создание сайта</a> — <br>
+          студия «Галактика»</div>
+      </div>
+
+    </footer>
+  </div>
 
 </body>
 
