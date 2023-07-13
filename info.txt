@@ -1,21 +1,30 @@
 ДОБАВЛЯЕМ В КОНЕЦ ФАЙЛА
 =======================
 
+заявка:
+  https://www.fl.ru/projects/3725512/verstka-sayta-i-posadka-na-dvijok.html
+
+переписка:
+  https://www.fl.ru/messages/?dialogId=72465269&dialogType=offer
+
+
+фигма страница цены:
+  https://www.figma.com/file/ledIhCOlDdtqnC807knCXS/Cosmodent%7CPrice?type=design&mode=design&t=NcKzRJIO1X1VCoGR-0
+    // https://www.figma.com/file/3QzyLidrLL1NiphdR6YdFU/Untitled?type=design&node-id=0-1&mode=design&t=ObYOK6naWj0bXQVc-0
+
+
 Тег <wbr> указывает браузеру место, где допускается делать перенос строки
 
 проект на github
   https://github.com/illicchpv/OlgSerg-project01
   
 
-public URL
+public URL нашего проекта
   https://illicchpv.github.io/OlgSerg-project01/pg01.html
 
 
 Favicon Generator. For real.
   https://realfavicongenerator.net/
-
-нужен более качественный logoO1
-  img\logotype\logoO1.png 
 
 семантика - "читаемость" сайта поисковыми роботами.
   https://www.youtube.com/embed/0lxU2YFhdz0?modestbranding=1
@@ -30,3 +39,6 @@ Favicon Generator. For real.
             ...
           ...
   <footer 
+
+Сайт про БЭМ https://ru.bem.info/methodology/quick-start/
+
