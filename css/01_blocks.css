@@ -1,8 +1,26 @@
+/* blockTitle */
+.blockTitle{
+  /* margin-bottom: 82px; */
+  color: #000;
+  font-family: msaR2;
+  font-size: 52px;
+  font-weight: 600;
+}
+.blockTitle__line {
+  display: inline-block;
+  width: 100px;
+  height: 8px;
+  background-color: #00A6E8;
+  border-radius: 0px 5px 5px 0px;
+  background: #004DC0;
+}
+
+
 /* phone information */
 .phoneInfo {
   position: relative;
 }
-.header__infoPhone::before {
+.phoneInfo::before {
   content: '';
   position: absolute;
   display: block;
@@ -75,14 +93,14 @@
 }
 
 /* titleLine */
-.titleLine {
+/* .titleLine {
   display: inline-block;
   width: 100px;
   height: 8px;
   background-color: #00A6E8;
   border-radius: 0px 5px 5px 0px;
   background: #004DC0;
-}
+} */
 
 /* .bluButton */
 .bluButton a {

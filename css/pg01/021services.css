@@ -1,16 +1,18 @@
-.dtelSection {
-  /* background-color: red; */
+.serviceListTitle{
+  margin-bottom: 51px;
 }
 
-.tdel {
+.serviceItem {
+  margin-top: 40px;
   border-radius: 20px;
   border: 1px solid #004DC0;
   background: #FFF;
 
   position: relative;
+  padding-bottom: 21px;
 }
 
-.prices__bl {
+.serviceItem__bl {
   display: block;
   width: 33px;
   height: 33px;
@@ -21,19 +23,19 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.prices__bl.prices__bl_1{
+.serviceItem__bl.serviceItem__bl_1{
   background-image: url(../../img/price_bl_1.svg);
 }
 
 .prices__penImg{
 }
 
-.tdel__block {
+.serviceItem__block {
   padding-left: 23px;
   padding-top: 23px;
 }
 
-.tdel__title {
+.serviceItem__title {
   color: #004DC0;
   font-family: msaR1;
   font-size: 30px;
@@ -42,7 +44,7 @@
   line-height: 29px;
 }
 
-.tdel__len {
+.serviceItem__len {
   margin-top: 30px;
   margin-bottom: 27px;
   display: flex;
@@ -56,22 +58,22 @@
   line-height: 26px;
 }
 
-.tdel__len img {
+.serviceItem__len img {
   width: 35px;
   height: 35px;
 }
 
-.tdel__len span {
+.serviceItem__len span {
   display: inline-block;
 }
 
-.tdel__len::before {}
+.serviceItem__len::before {}
 
-.tdel__items{
+.serviceItem__items{
   display: flex;
   gap: 46px;
 }
-.tdel__item {
+.serviceItem__item {
   padding-left: 46px;
   max-width: 842px;
   margin-bottom: 35px;
