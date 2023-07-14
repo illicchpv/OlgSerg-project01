@@ -1,0 +1,117 @@
+.dtelSection {
+  /* background-color: red; */
+}
+
+.tdel {
+  border-radius: 20px;
+  border: 1px solid #004DC0;
+  background: #FFF;
+
+  position: relative;
+}
+
+.prices__bl {
+  display: block;
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  top: 22px; right: 27px;
+
+  background-image: url(../../img/price_bl_0.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.prices__bl.prices__bl_1{
+  background-image: url(../../img/price_bl_1.svg);
+}
+
+.prices__penImg{
+}
+
+.tdel__block {
+  padding-left: 23px;
+  padding-top: 23px;
+}
+
+.tdel__title {
+  color: #004DC0;
+  font-family: msaR1;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 29px;
+}
+
+.tdel__len {
+  margin-top: 30px;
+  margin-bottom: 27px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  color: #000;
+  font-family: msaR;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.tdel__len img {
+  width: 35px;
+  height: 35px;
+}
+
+.tdel__len span {
+  display: inline-block;
+}
+
+.tdel__len::before {}
+
+.tdel__items{
+  display: flex;
+  gap: 46px;
+}
+.tdel__item {
+  padding-left: 46px;
+  max-width: 842px;
+  margin-bottom: 35px;
+}
+.deletionTooth {
+  width: 551px;
+  height: 337px;
+  overflow: hidden;
+  /* position: absolute;
+  top: 125px; right: 90px; */
+}
+
+
+.priceLine {
+  display: flex;
+  gap: 17px;
+  justify-content: space-between;
+  align-items: baseline;
+  /* 71 90 */
+  width: calc(100% - 71px - 90px);
+  margin-left: 71px;
+  /* background-color: red; */
+  height: 10px;
+
+}
+.priceLine__title {
+  white-space: nowrap;
+  color: #026AB6;
+  font-size: 20px;
+  font-weight: 400;
+}
+.priceLine__line {
+  height: 1px;
+  background: #E3E3E3;
+  width: 100%;
+}
+.priceLine__cost {
+  white-space: nowrap;
+  color: #000;
+  font-family: msaR2;
+  font-size: 20px;
+  font-weight: 700;
+}
