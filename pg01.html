@@ -208,11 +208,17 @@
 
                   <form action="">
                     <!-- Ваше имя * -->
-                    <img class="appointment__formField" src="./img/input/name.png" alt="name">
-<!-- Телефон * -->
-                    <img class="appointment__formField" src="img/input/phone.png" alt="">
-  <!-- Почта -->
-                    <img class="appointment__formField" src="img/input/mail.png" alt="">
+                    <div class="inputField inputField_name appointment__formField">
+                      <input type="text" placeholder="Ваше имя *" autocomplete="off">
+                    </div>
+                    <!-- Телефон * -->
+                    <div class="inputField inputField_phone appointment__formField">
+                      <input type="tel" placeholder="Телефон *" autocomplete="off">
+                    </div>
+                    <!-- Почта -->
+                    <div class="inputField inputField_mail appointment__formField">
+                      <input type="email" placeholder="Почта" autocomplete="off">
+                    </div>
   <!--Выберите услугу  -->
                     <img class="appointment__formField" src="img/input/select.png" alt="">
   

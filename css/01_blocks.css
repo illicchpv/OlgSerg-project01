@@ -1,11 +1,12 @@
-/* blockTitle */
-.blockTitle{
+/* .blockTitle */
+.blockTitle {
   /* margin-bottom: 82px; */
   color: #000;
   font-family: msaR2;
   font-size: 52px;
   font-weight: 600;
 }
+
 .blockTitle__line {
   display: inline-block;
   width: 100px;
@@ -14,12 +15,13 @@
   border-radius: 0px 5px 5px 0px;
   background: #004DC0;
 }
+/* /.blockTitle */
 
-
-/* phone information */
+/* .phoneInfo phone information */
 .phoneInfo {
   position: relative;
 }
+
 .phoneInfo::before {
   content: '';
   position: absolute;
@@ -57,9 +59,10 @@
   font-size: 12px;
   font-weight: 600;
 }
+/* /.phoneInfo phone information */
 
 
-/* socials */
+/* .socials */
 .socials {
   display: flex;
   justify-content: space-between;
@@ -91,6 +94,7 @@
 .socials__item_tg {
   background-image: url(../../img/social_tg.png);
 }
+/* /.socials */
 
 /* titleLine */
 /* .titleLine {
@@ -124,3 +128,58 @@
   text-decoration: none;
   white-space: nowrap;
 }
+/* /.bluLinkButton */
+
+/* .inputField */
+.inputField {
+  position: relative;
+}
+
+.inputField input {
+  padding: 10px;
+  padding-left: 64px;
+  width: calc(100% - 74px);
+  border-radius: 15px;
+  border: 1px solid #D9D9D9;
+  background: #FFF;
+
+  color: #959595;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.inputField input:focus{
+  outline: none;
+}
+
+.inputField::before {
+  content: '';
+  position: absolute;
+  left: 21px;
+  top: calc((100% - 20px)/2);
+  z-index: 10;
+
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inputField_name::before {
+  background-image: url(../img/input/name.svg);
+}
+
+.inputField_phone::before {
+  background-image: url(../img/input/phone.svg);
+}
+
+.inputField_mail::before {
+  background-image: url(../img/input/mail.svg);
+}
+
+.inputField_select::before {
+  background-image: url(../img/input/select.svg);
+}
+
+/* /.inputField */

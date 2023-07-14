@@ -31,49 +31,116 @@
 
   <link rel="stylesheet" href="css/pg01/010header.css">
   <link rel="stylesheet" href="css/pg01/021services.css">
+  <link rel="stylesheet" href="css/pg01/030appointment.css">
   <link rel="stylesheet" href="css/pg01/040contact.css">
   <link rel="stylesheet" href="css/pg01/050footer.css">
 
   <script src="./js/index.js" defer></script>
   <script src="./js/pg01/pg01.js" defer></script>
 
+</head>
+
+<body>
   <style>
     .onheader {
       height: 50px;
       background-color: aquamarine;
+      margin-bottom: 4px;
     }
+
     .onfooter {
+      margin-top: 4px;
       height: 50px;
       background-color: burlywood;
     }
-    .box1{
-      height: 150px;width: 150px;
-      background-color: brown;
-      margin-left: 10px;
-      z-index: 20;
-      position: relative;
-    }
-    .box2{
-      margin-top: -10px;
-      height: 150px;width: 150px;
-      background-color: chocolate;
-      z-index: 10;
-      position: relative;
-    }
   </style>
-</head>
 
-<body>
-
-  <div class="container">
+  <div style="display: none;">
     <div class="onheader"></div>
+    <div class="container">
+      <style>
+        .box1 {
+          height: 150px;
+          width: 150px;
+          background-color: brown;
+          margin-left: 10px;
+          z-index: 20;
+          position: relative;
+        }
 
-    <div class="box1"></div>
-    <div class="box2"></div>
+        .box2 {
+          margin-top: -10px;
+          height: 150px;
+          width: 150px;
+          background-color: chocolate;
+          z-index: 10;
+          position: relative;
+        }
+      </style>
 
+      <div class="box1"></div>
+      <div class="box2"></div>
+
+    </div>
     <div class="onfooter"></div>
+    <hr>
   </div>
 
+  <div style="display: -none;">
+    <div class="onheader"></div>
+    <div class="container">
+      <style>
+        .card__input {
+          font-size: 16px;
+          border: 1px solid rgba(39, 48, 15, .4);
+          border-radius: 2rem;
+          display: block;
+          padding: 2.2rem 3rem;
+          width: 100%;
+          box-sizing: border-box;
+        }
+      </style>
+
+      <!-- ... -->
+      <!-- <input class="card__input flu" type="tel" placeholder="Ваш телефон"> -->
+      <style>
+      </style>
+
+      <div class="inputField inputField_name">
+        <input type="tel" placeholder="Ваше имя *">
+      </div>
+      <div class="inputField inputField_phone">
+        <input type="tel" placeholder="Телефон *">
+      </div>
+      <div class="inputField inputField_mail">
+        <input type="tel" placeholder="Почта">
+      </div>
+      <div class="inputField inputField_select">
+        <input type="tel" placeholder="Выберите услугу">
+      </div>
+
+      <div>
+        <!-- <input class="inputField" type="tel" placeholder="Телефон *" style="margin-left: 100px;"> -->
+      </div>
+
+    </div>
+    <div class="onfooter"></div>
+    <hr>
+  </div>
+
+  <div style="display: none;">
+    <div class="onheader"></div>
+    <div class="container">
+      <style>
+
+      </style>
+
+      <!-- ... -->
+
+    </div>
+    <div class="onfooter"></div>
+    <hr>
+  </div>
 </body>
 
 </html>
