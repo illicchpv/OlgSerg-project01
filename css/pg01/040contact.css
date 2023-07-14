@@ -16,12 +16,6 @@
   justify-content: center;
  
   background-color: #EEF7F9;
-
-  /* flex-direction: column;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  background-color: #EEF7F9; */
 }
 .contacts__formBox{
   margin-top: 121px;
@@ -43,7 +37,6 @@
   margin-bottom: 58px;
   max-width: 196px;
 }
-/*  */
 
 /* --------- contactsMap ----------- */
 .contactsMap{
@@ -54,7 +47,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: #D4F2BB; */
 
   background-image: url(../../img/map.png);
   background-repeat: no-repeat;
