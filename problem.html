@@ -30,10 +30,11 @@
 
     .bg {
       width: 200px;
-      height: 350px;
+      /* height: 350px; */
 
       background-repeat: no-repeat;
       background-size: cover;
+      /* background-image: url(./img/myappointment_bg.svg); */
 
       display: flex;
       justify-content: center;
@@ -49,7 +50,7 @@
     }
   </style>
 
-  <table>
+  <!-- <table>
     <tr>
       <td>
         <h2>исходная <br> SVG img</h2>
@@ -72,24 +73,27 @@
         <img class="srcAspect" src="./img/myappointment_bg.png" alt="">
       </td>
     </tr>
-  </table>
+  </table> -->
   <table>
     <tr>
-      <td>
+      <!-- <td>
         <h2>SVG img</h2>
       </td>
       <td>
         <h2>PNG img</h2>
-      </td>
+      </td> -->
       <td>
         <h2>SVG фон</h2>
       </td>
       <td>
         <h2>PNG фон</h2>
       </td>
+      <td>
+
+      </td>
     </tr>
     <tr>
-      <td style="background-color: red;">
+      <!-- <td style="background-color: red;">
         <p>
           задана ширина 200px <br> и высота 350px
         </p>
@@ -100,20 +104,37 @@
           задана ширина 200px<br> и высота 350px
         </p>
         <img class="workAspect" src="./img/myappointment_bg.png" alt="">
-      </td>
+      </td> -->
       <td>
         <div class="bg bg_Png">
           <p>
+            <!-- -------------<br>
+            <br>  для растяжки по высоте
+            <br><br><br><br><br><br><br><br><br> -->
             png как фон
+            <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br> 
+            --------------- -->
           </p>
         </div>
       </td>
       <td>
         <div class="bg bg_Svg">
           <p>
+            -------------<br>
+            <br>  для растяжки по высоте
+            <br><br><br><br><br><br><br><br><br>
             svg как фон
+            <br><br><br><br><br><br><br><br><br><br><br><br><br> 
+            ---------------
           </p>
         </div>
+      </td>
+      <td>
+<!-- 
+<br>  для растяжки по высоте
+<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br> 
+-->
       </td>
     </tr>
   </table>
