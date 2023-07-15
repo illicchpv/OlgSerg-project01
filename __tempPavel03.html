@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/00_root.css">
+  <link rel="stylesheet" href="css/01_blocks.css">
+  <link rel="stylesheet" href="css/02_select.css">
+
+  <link rel="stylesheet" href="css/pg01/030appointment.css">
+
+  <style>
+body{
+  background-color: #ECF7FF;
+}
+  </style>
+</head>
+<body>
+  <hr>
+aaaaaaaaaaaaaa <br>
+aaaaaaaaaaaaaa <br>
+aaaaaaaaaaaaaa 
+aaaaaaaaaaaaaa <br>
+aaaaaaaaaaaaaa <br>
+aaaaaaaaaaaaaa 
+
+
+<table>
+  <tr>
+    <td>
+      <div style="display: inline-block; ">
+
+        <div class="comunication__dropLine">
+          <!-- с использованием: https://codepen.io/robsonklein23/pen/jOYyKVV?editors=1100 -->
+          <label class="drop">
+            <input type="checkbox" id="target-drop-example"> <!-- Toggle Drop -->
+            <span class="drop__control" id="dropTarget">Звонок на телефон</span> <!-- Fake button -->
+            <script>
+              function dropSelect(el, placeholder, speak){
+                let items = el.parentElement.parentElement.querySelectorAll('.drop__item');
+                items.forEach(element => { element.classList.remove("itemSelected"); });
+                el.parentElement.classList.add('itemSelected');
+                document.getElementById('dropTarget').innerText = el.innerText;
+                if(speak)
+                  speakText(speak)
+                // try{
+                //   document.getElementById('cPhoneMail').placeholder = placeholder;
+                //   document.getElementById('cPhoneMail').focus();
+                // }catch(e){console.error("cPhoneMail", e)}
+              }
+              function loadVoices() {
+                var voices = speechSynthesis.getVoices();
+                console.log("voices:",voices)
+              }
+              function speakPH(el){
+                let placeholder = el.getAttribute("placeholder")
+                if(!placeholder)
+                  return;
+                speakText(placeholder);
+              }
+              function speakText(txt){
+                try{
+                  let speech = new window.SpeechSynthesisUtterance(); speech.text = txt;
+                  window.speechSynthesis.speak(speech);
+                }catch(e){console.error("speakText", e)}
+              }
+            </script>
+            <!-- Items -->
+            <ul class="drop__items">
+              <li class="drop__item itemSelected"><a href="javascript:void(0)" onclick="dropSelect(this, 'Выберите услугу')"><label for="target-drop-example">Выберите услугу</label></a></li>
+              <li class="drop__item"><a href="javascript:void(0)" onclick="dropSelect(this, 'Консультация стоматолога', 'записаться на консультацию стоматолога')"><label for="target-drop-example">Консультация стоматолога</label></a></li>
+              <li class="drop__item"><a href="javascript:void(0)" onclick="dropSelect(this, 'Терапия', 'записаться на терапию')"><label for="target-drop-example">Терапия</label></a></li>
+              <li class="drop__item"><a href="javascript:void(0)" onclick="dropSelect(this, 'Удаление зубов', 'записаться на Удаление зубов')"><label for="target-drop-example">Удаление зубов</label></a></li>
+              <li class="drop__item"><a href="javascript:void(0)" onclick="dropSelect(this, 'Имплантация', 'записаться на Имплантацию')"><label for="target-drop-example">Имплантация</label></a></li>
+              <li class="drop__item"><a href="javascript:void(0)" onclick="dropSelect(this, 'ВИНИРЫ', 'записаться на установку виниров')"><label for="target-drop-example">ВИНИРЫ</label></a></li>
+            </ul>
+            <!-- Alternative to close dropdown with click out -->
+            <label for="target-drop-example" class="drop__closeOverlay"></label>
+          </label>
+        </div>
+
+      </div>
+    </td>
+    <td>
+      <div class="inputField inputField_phone appointment__formField">
+        <input type="tel" placeholder="Телефон *" autocomplete="off">
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="inputField inputField_phone appointment__formField">
+        <input type="tel" placeholder="Телефон *" autocomplete="off">
+      </div>
+    </td>
+    <td>22</td>
+  </tr>
+</table>
+  <hr>
+</body>
+</html>
