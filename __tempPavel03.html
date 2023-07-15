@@ -10,23 +10,61 @@
   <link rel="stylesheet" href="css/01_blocks.css">
   <link rel="stylesheet" href="css/02_select.css">
 
+  <link rel="stylesheet" href="css/pg01/010header.css">
+  <link rel="stylesheet" href="css/pg01/021services.css">
   <link rel="stylesheet" href="css/pg01/030appointment.css">
+  <link rel="stylesheet" href="css/pg01/040contact.css">
+  <link rel="stylesheet" href="css/pg01/050footer.css">
+
+  <script src="./js/index.js" defer></script>
+  <script src="./js/pg01/pg01.js" defer></script>
 
   <style>
 body{
   background-color: #ECF7FF;
 }
+h1,h2,h3,h4{
+  margin: 0;
+  font-weight: 400;
+  background-color: bisque;}
+.h1{
+  font-size: 2em; 
+  /* font-weight: 700;  */
+  /* margin: 21.44px;  */
+  background-color: cadetblue;
+}
   </style>
 </head>
 <body>
   <hr>
-aaaaaaaaaaaaaa <br>
+  <table style="width: 100%;">
+<tr>
+  <td style="width: 50%;">
+    <h1>h1 title</h1>  
+    <h1>h1 title</h1>  
+    <h1>h1 title</h1>  
+  </td>
+  <td>
+    <div class="h1" style="">h1 title</div>  
+    <div class="h1">h1 title</div>  
+    <div class="h1">h1 title</div>  
+  </td>
+</tr>
+  </table>
+  <h2>h2 title</h2>  
+  <h2>h2 title</h2>  
+  <h3>h3 title</h3>  
+  <h3>h3 title</h3>  
+  <h4>h4 title</h4>  
+  <h4>h4 title</h4>  
+  <hr>
+  <hr>
+<!-- aaaaaaaaaaaaaa <br>
 aaaaaaaaaaaaaa <br>
 aaaaaaaaaaaaaa 
 aaaaaaaaaaaaaa <br>
 aaaaaaaaaaaaaa <br>
 aaaaaaaaaaaaaa 
-
 
 <table>
   <tr>
@@ -34,10 +72,9 @@ aaaaaaaaaaaaaa
       <div style="display: inline-block; ">
 
         <div class="comunication__dropLine">
-          <!-- с использованием: https://codepen.io/robsonklein23/pen/jOYyKVV?editors=1100 -->
           <label class="drop">
-            <input type="checkbox" id="target-drop-example"> <!-- Toggle Drop -->
-            <span class="drop__control" id="dropTarget">Звонок на телефон</span> <!-- Fake button -->
+            <input type="checkbox" id="target-drop-example">
+            <span class="drop__control" id="dropTarget">Звонок на телефон</span>
             <script>
               function dropSelect(el, placeholder, speak){
                 let items = el.parentElement.parentElement.querySelectorAll('.drop__item');
@@ -68,7 +105,6 @@ aaaaaaaaaaaaaa
                 }catch(e){console.error("speakText", e)}
               }
             </script>
-            <!-- Items -->
             <ul class="drop__items">
               <li class="drop__item itemSelected"><a href="javascript:void(0)" onclick="dropSelect(this, 'Выберите услугу')"><label for="target-drop-example">Выберите услугу</label></a></li>
               <li class="drop__item"><a href="javascript:void(0)" onclick="dropSelect(this, 'Консультация стоматолога', 'записаться на консультацию стоматолога')"><label for="target-drop-example">Консультация стоматолога</label></a></li>
@@ -77,7 +113,6 @@ aaaaaaaaaaaaaa
               <li class="drop__item"><a href="javascript:void(0)" onclick="dropSelect(this, 'Имплантация', 'записаться на Имплантацию')"><label for="target-drop-example">Имплантация</label></a></li>
               <li class="drop__item"><a href="javascript:void(0)" onclick="dropSelect(this, 'ВИНИРЫ', 'записаться на установку виниров')"><label for="target-drop-example">ВИНИРЫ</label></a></li>
             </ul>
-            <!-- Alternative to close dropdown with click out -->
             <label for="target-drop-example" class="drop__closeOverlay"></label>
           </label>
         </div>
@@ -99,6 +134,6 @@ aaaaaaaaaaaaaa
     <td>22</td>
   </tr>
 </table>
-  <hr>
+  <hr> -->
 </body>
 </html>
