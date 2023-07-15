@@ -9,20 +9,53 @@
 
 <body>
   <style>
+    body {
+      background-color: darkgoldenrod; font-size: 24px;
+    }
+    td{border: 1px solid white; padding: 6px;}
+
     .srcAspect {
       width: 200px;
     }
+
     .workAspect {
       width: 200px;
       height: 350px;
     }
-    body{ background-color: darkgoldenrod;}
+
+    .bg{
+      width: 200px;
+      height: 350px;
+
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .bg_Png {
+      background-image: url(./img/myappointment_bg.png);
+    }
+    .bg_Svg {
+      background-image: url(./img/myappointment_bg.svg);
+    }
   </style>
 
   <table>
     <tr>
-      <td><h2>SVG</h2></td>
-      <td><h2>PNG</h2></td>
+      <td>
+        <h2>SVG img</h2>
+      </td>
+      <td>
+        <h2>PNG img</h2>
+      </td>
+      <td>
+        <h2>SVG фон</h2>
+      </td>
+      <td>
+        <h2>PNG фон</h2>
+      </td>
     </tr>
     <tr>
       <td>
@@ -30,7 +63,6 @@
           задана только <br> ширина 200px
         </p>
         <img class="srcAspect" src="./img/myappointment_bg.svg" alt="">
-      
       </td>
       <td>
         <p>
@@ -38,9 +70,23 @@
         </p>
         <img class="srcAspect" src="./img/myappointment_bg.png" alt="">
       </td>
+      <td>
+        <div class="bg bg_Png">
+          <p>
+            png как фон
+          </p>
+        </div>
+      </td>
+      <td>
+        <div class="bg bg_Svg">
+          <p>
+            svg как фон
+          </p>
+        </div>
+      </td>
     </tr>
     <tr>
-      <td>
+      <td style="background-color: red;">
         <p>
           задана ширина 200px <br> и высота 350px
         </p>
@@ -49,7 +95,7 @@
       </td>
       <td>
         <p>
-          задана ширина 200px<br>  и высота 350px
+          задана ширина 200px<br> и высота 350px
         </p>
         <img class="workAspect" src="./img/myappointment_bg.png" alt="">
       </td>
