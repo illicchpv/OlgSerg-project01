@@ -10,9 +10,14 @@
 <body>
   <style>
     body {
-      background-color: darkgoldenrod; font-size: 24px;
+      background-color: darkgoldenrod;
+      font-size: 24px;
     }
-    td{border: 1px solid white; padding: 6px;}
+
+    td {
+      border: 1px solid white;
+      padding: 6px;
+    }
 
     .srcAspect {
       width: 200px;
@@ -23,7 +28,7 @@
       height: 350px;
     }
 
-    .bg{
+    .bg {
       width: 200px;
       height: 350px;
 
@@ -34,14 +39,40 @@
       justify-content: center;
       align-items: center;
     }
+
     .bg_Png {
       background-image: url(./img/myappointment_bg.png);
     }
+
     .bg_Svg {
       background-image: url(./img/myappointment_bg.svg);
     }
   </style>
 
+  <table>
+    <tr>
+      <td>
+        <h2>исходная <br> SVG img</h2>
+      </td>
+      <td>
+        <h2>исходная <br>PNG img</h2>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>
+          задана только <br> ширина 200px
+        </p>
+        <img class="srcAspect" src="./img/myappointment_bg.svg" alt="">
+      </td>
+      <td>
+        <p>
+          задана только <br> ширина 200px
+        </p>
+        <img class="srcAspect" src="./img/myappointment_bg.png" alt="">
+      </td>
+    </tr>
+  </table>
   <table>
     <tr>
       <td>
@@ -58,17 +89,17 @@
       </td>
     </tr>
     <tr>
-      <td>
+      <td style="background-color: red;">
         <p>
-          задана только <br> ширина 200px
+          задана ширина 200px <br> и высота 350px
         </p>
-        <img class="srcAspect" src="./img/myappointment_bg.svg" alt="">
+        <img class="workAspect" src="./img/myappointment_bg.svg" alt="">
       </td>
       <td>
         <p>
-          задана только <br> ширина 200px
+          задана ширина 200px<br> и высота 350px
         </p>
-        <img class="srcAspect" src="./img/myappointment_bg.png" alt="">
+        <img class="workAspect" src="./img/myappointment_bg.png" alt="">
       </td>
       <td>
         <div class="bg bg_Png">
@@ -83,21 +114,6 @@
             svg как фон
           </p>
         </div>
-      </td>
-    </tr>
-    <tr>
-      <td style="background-color: red;">
-        <p>
-          задана ширина 200px <br> и высота 350px
-        </p>
-        <img class="workAspect" src="./img/myappointment_bg.svg" alt="">
-
-      </td>
-      <td>
-        <p>
-          задана ширина 200px<br> и высота 350px
-        </p>
-        <img class="workAspect" src="./img/myappointment_bg.png" alt="">
       </td>
     </tr>
   </table>
