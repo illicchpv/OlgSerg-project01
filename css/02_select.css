@@ -116,4 +116,9 @@
 
 .drop .drop__items li.itemSelected a {
   color: black;
+}
+
+.test {
+  font-size: calc(76px - (768px - 100vw) * 0.1774509804);
+  text-align: center;
 }/*# sourceMappingURL=02_select.css.map */
