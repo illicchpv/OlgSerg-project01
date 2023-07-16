@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/x-icon" href="./img/favicon/favicon.ico">
+  <!-- favicon  -->
+  <!-- <link rel="apple-touch-icon" sizes="192x192" href="img/favicon/android-chrome-192x192.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="img/favicon/android-chrome-512x512.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+
+  <link rel="icon" type="image/x-icon" href="./img/favicon/favicon.ico">
+
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="150x150" href="img/favicon/mstile-150x150.png">
+
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff"> -->
+  <!-- /favicon  -->
+
+  <title>Космодент | цены</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/00_root.css">
+  <link rel="stylesheet" href="css/01_blocks.css">
+  <link rel="stylesheet" href="css/02_select.css">
+  <link rel="stylesheet" href="css/03_input.css">
+
+  <link rel="stylesheet" href="css/pg01/010header.css">
+  <link rel="stylesheet" href="css/pg01/021services.css">
+  <link rel="stylesheet" href="css/pg01/030appointment.css">
+  <link rel="stylesheet" href="css/pg01/040contact.css">
+  <link rel="stylesheet" href="css/pg01/050footer.css">
+
+  <script src="./js/index.js" defer></script>
+  <script src="./js/pg01/pg01.js" defer></script>
+
+</head>
+
+<body>
+
+  <style>
+    .formContainer {
+      max-width: 600px;
+      margin: 0 auto;
+      margin-top: 50px;
+      background-color: aquamarine;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .formContainer2 {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .subscribe-form-item1 {
+      /* flex-basis: 372px; */
+      /* background-color: red; */
+      /* flex-shrink: 1; */
+
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: 0.03em;
+      color: #2B3541;
+    }
+
+    .inputFField {
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 26px;
+
+      /* outline: none;
+      box-sizing: border-box;
+      border: 3px solid transparent; */
+    }
+
+    /* 
+    .inputFField:visited:invalid{
+    } */
+    /* .inputFField:focus:required:invalid {
+      color: red;
+      border-color: red;
+      box-shadow: 0 0 6px red !important; 
+    }
+    .inputFField:visited {
+      border-color: green;
+      box-shadow: 0 0 8px green !important;
+    } */
+
+    /* .inputFField:focus:required:valid,
+    .inputFField:focus:required:placeholder-shown {
+      border-color: green;
+      box-shadow: 0 0 8px green;
+    } */
+  </style>
+
+  <form action="">
+    <div class="formContainer">
+
+      <div class="subscribe-form-item1">
+        <input id="inputNameTst" class="inputFldBase inputFField" placeholder="Ваше имя *" type="text" name="clientEMail" value=""
+          minlength="3" maxlength="30" tabindex="1">
+      </div>
+      <div class="subscribe-form-item1">
+        <input id="inputTelTst" class="inputFldBase inputFField" name="clientTel" value="" type="text"
+          pattern="[\d]{3} [\d]{3} [\d]{4}" placeholder="Телефон *      ### ### ####" autocomplete="off" tabindex="1">
+      </div>
+      <div class="subscribe-form-item1">
+        <input id="inputEmailTst" class="inputFldBase inputFField" placeholder="Почта" type="email" name="clientEMail" value=""
+          tabindex="1">
+      </div>
+
+      <script>
+        // document.getElementById('inputTel').inputmask = { "mask": "(999) 999-99-99" }
+        // // $("#inputTel").inputmask({"mask": "(999) 999-99-99"});
+
+        document.getElementById('inputTelTst').addEventListener('input', function (e) {
+          var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+          e.target.value = !x[2] ? x[1] : '' + x[1] + ' ' + x[2] + (x[3] ? ' ' + x[3] : '');
+          //console.log(e.target.value)
+        });
+
+      </script>
+    </div>
+  </form>
+  <hr>
+  <div class="formContainer2">
+
+    <div class="appointment_form">
+      <div class="appointment__row">
+        <div class="appointment__formBlock">
+
+          <h1 class="blockTitle appointment__formTitle">Запись на прием <div class="blockTitle__line"></div>
+          </h1>
+
+          <div class="appointment__topInfoline">Запишитесь на консультацию или прием <br>
+            по телефону <a href="tel:+74912272008">+7 (4912) 272-008</a> или заполните форму</div>
+
+          <form action="">
+            <!-- Ваше имя * -->
+            <div class="inputField inputField_name appointment__formField ">
+              <input id="inputName" class="inputFldBase inputFField" type="text" placeholder="Ваше имя *" autocomplete="off"
+                minlength="3" maxlength="30">
+            </div>
+            <!-- Телефон * -->
+            <div class="inputField inputField_phone appointment__formField">
+              <input id="inputTel" class="inputFldBase inputFField" type="text" placeholder="Телефон *      ### ### ####"
+                autocomplete="off" pattern="[\d]{3} [\d]{3} [\d]{4}">
+              <script>
+                document.getElementById('inputTel').addEventListener('input', function (e) {
+                  var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+                  e.target.value = !x[2] ? x[1] : '' + x[1] + ' ' + x[2] + (x[3] ? ' ' + x[3] : '');
+                });
+              </script>
+            </div>
+            <!-- Почта -->
+            <div class="inputField inputField_mail appointment__formField">
+              <input id="inputEmail" class="inputFldBase inputFField" type="email" placeholder="Почта" autocomplete="off"
+                pattern="^[^ ]+@[^ ]+\.[a-z]{2,6}$" maxlength="30">
+            </div>
+            <!--Выберите услугу  -->
+            <div class="comunication__dropLine">
+              <!-- с использованием: https://codepen.io/robsonklein23/pen/jOYyKVV?editors=1100 -->
+              <label class="drop">
+                <input type="checkbox" id="target-drop-example"> <!-- Toggle Drop -->
+                <span class="drop__control" id="dropTarget">Звонок на телефон</span> <!-- Fake button -->
+                <script>
+                  function dropSelect(el, placeholder, speak) {
+                    let items = el.parentElement.parentElement.querySelectorAll('.drop__item');
+                    items.forEach(element => { element.classList.remove("itemSelected"); });
+                    el.parentElement.classList.add('itemSelected');
+                    document.getElementById('dropTarget').innerText = el.innerText;
+                    if (speak)
+                      speakText(speak)
+                    // try{
+                    //   document.getElementById('cPhoneMail').placeholder = placeholder;
+                    //   document.getElementById('cPhoneMail').focus();
+                    // }catch(e){console.error("cPhoneMail", e)}
+                  }
+                  function loadVoices() {
+                    var voices = speechSynthesis.getVoices();
+                    console.log("voices:", voices)
+                  }
+                  function speakPH(el) {
+                    let placeholder = el.getAttribute("placeholder")
+                    if (!placeholder)
+                      return;
+                    speakText(placeholder);
+                  }
+                  function speakText(txt) {
+                    try {
+                      let speech = new window.SpeechSynthesisUtterance(); speech.text = txt;
+                      window.speechSynthesis.speak(speech);
+                    } catch (e) { console.error("speakText", e) }
+                  }
+                </script>
+                <!-- Items -->
+                <ul class="drop__items">
+                  <li class="drop__item itemSelected"><a href="javascript:void(0)"
+                      onclick="dropSelect(this, 'Выберите услугу')"><label for="target-drop-example">Выберите
+                        услугу</label></a></li>
+                  <li class="drop__item"><a href="javascript:void(0)"
+                      onclick="dropSelect(this, 'Консультация стоматолога', 'записаться на консультацию стоматолога')"><label
+                        for="target-drop-example">Консультация стоматолога</label></a></li>
+                  <li class="drop__item"><a href="javascript:void(0)"
+                      onclick="dropSelect(this, 'Терапия', 'записаться на терапию')"><label
+                        for="target-drop-example">Терапия</label></a></li>
+                  <li class="drop__item"><a href="javascript:void(0)"
+                      onclick="dropSelect(this, 'Удаление зубов', 'записаться на Удаление зубов')"><label
+                        for="target-drop-example">Удаление зубов</label></a></li>
+                  <li class="drop__item"><a href="javascript:void(0)"
+                      onclick="dropSelect(this, 'Имплантация', 'записаться на Имплантацию')"><label
+                        for="target-drop-example">Имплантация</label></a></li>
+                  <li class="drop__item"><a href="javascript:void(0)"
+                      onclick="dropSelect(this, 'ВИНИРЫ', 'записаться на установку виниров')"><label
+                        for="target-drop-example">ВИНИРЫ</label></a></li>
+                </ul>
+                <!-- Alternative to close dropdown with click out -->
+                <label for="target-drop-example" class="drop__closeOverlay"></label>
+              </label>
+            </div>
+
+            <div class="appointment__bottomInfoline">Отправляя заявку, вы соглашаетесь с
+              <a href="#">политикой конфиденциальности</a> данного сайта.
+            </div>
+
+            <div class="bluLinkButton appointment__formButton"><a href="#">Отправить</a></div>
+          </form>
+        </div>
+
+        <div class="appointment__photoBlock">
+          <img class="appointment__frontman" src="./img/frontman.png" alt="frontman">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

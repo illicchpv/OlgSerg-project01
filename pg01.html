@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="css/00_root.css">
   <link rel="stylesheet" href="css/01_blocks.css">
   <link rel="stylesheet" href="css/02_select.css">
+  <link rel="stylesheet" href="css/03_input.css">
 
   <link rel="stylesheet" href="css/pg01/010header.css">
   <link rel="stylesheet" href="css/pg01/021services.css">
@@ -125,7 +126,8 @@
 
               <div class="serviceItem__items">
                 <div>
-                  <div class="serviceItem__item">Специалисты стараются обеспечить все условия для зубосохранения. Удаление —
+                  <div class="serviceItem__item">Специалисты стараются обеспечить все условия для зубосохранения.
+                    Удаление —
                     это крайняя
                     мера, когда уже нет никакой возможности сохранить зуб. Чтобы минимизировать риски и избежать
                     удаления,
@@ -184,7 +186,7 @@
     </div>
 
     <!-- Запись на прием -->
-    <div class="containerExt containerExt_appointment" 
+    <div class="containerExt containerExt_appointment"
       style="background-color:-transparent; position: relative; z-index: 20;">
       <img class="appointment__bg" src="./img/app2_bg.svg" alt="myappointment_bg">
       <div class="container">
@@ -194,7 +196,7 @@
             <div class="appointment_form">
               <div class="appointment__row">
                 <div class="appointment__formBlock">
-                  
+
                   <h1 class="blockTitle appointment__formTitle">Запись на прием <div class="blockTitle__line"></div>
                   </h1>
 
@@ -204,29 +206,41 @@
                   <form action="">
                     <!-- Ваше имя * -->
                     <div class="inputField inputField_name appointment__formField">
-                      <input type="text" placeholder="Ваше имя *" autocomplete="off">
+                      <!-- <input type="text" placeholder="Ваше имя *" autocomplete="off"> -->
+                      <input id="inputName" class="inputFldBase inputFField" type="text" placeholder="Ваше имя *"
+                        autocomplete="off" minlength="3" maxlength="30">
                     </div>
                     <!-- Телефон * -->
                     <div class="inputField inputField_phone appointment__formField">
-                      <input type="tel" placeholder="Телефон *" autocomplete="off">
+                      <!-- <input type="tel" placeholder="Телефон *" autocomplete="off"> -->
+                      <input id="inputTel" class="inputFldBase inputFField" type="text"
+                        placeholder="Телефон *      ### ### ####" autocomplete="off" pattern="[\d]{3} [\d]{3} [\d]{4}">
+                      <script>
+                        document.getElementById('inputTel').addEventListener('input', function (e) {
+                          var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+                          e.target.value = !x[2] ? x[1] : '' + x[1] + ' ' + x[2] + (x[3] ? ' ' + x[3] : '');
+                        });
+                      </script>
                     </div>
                     <!-- Почта -->
                     <div class="inputField inputField_mail appointment__formField">
-                      <input type="email" placeholder="Почта" autocomplete="off">
+                      <!-- <input type="email" placeholder="Почта" autocomplete="off"> -->
+                      <input id="inputEmail" class="inputFldBase inputFField" type="email" placeholder="Почта"
+                        autocomplete="off" pattern="^[^ ]+@[^ ]+\.[a-z]{2,6}$" maxlength="30">
                     </div>
-  <!--Выберите услугу  -->
+                    <!--Выберите услугу  -->
                     <div class="comunication__dropLine">
                       <!-- с использованием: https://codepen.io/robsonklein23/pen/jOYyKVV?editors=1100 -->
                       <label class="drop">
                         <input type="checkbox" id="target-drop-example"> <!-- Toggle Drop -->
                         <span class="drop__control" id="dropTarget">Звонок на телефон</span> <!-- Fake button -->
                         <script>
-                          function dropSelect(el, placeholder, speak){
+                          function dropSelect(el, placeholder, speak) {
                             let items = el.parentElement.parentElement.querySelectorAll('.drop__item');
                             items.forEach(element => { element.classList.remove("itemSelected"); });
                             el.parentElement.classList.add('itemSelected');
                             document.getElementById('dropTarget').innerText = el.innerText;
-                            if(speak)
+                            if (speak)
                               speakText(speak)
                             // try{
                             //   document.getElementById('cPhoneMail').placeholder = placeholder;
@@ -235,38 +249,51 @@
                           }
                           function loadVoices() {
                             var voices = speechSynthesis.getVoices();
-                            console.log("voices:",voices)
+                            console.log("voices:", voices)
                           }
-                          function speakPH(el){
+                          function speakPH(el) {
                             let placeholder = el.getAttribute("placeholder")
-                            if(!placeholder)
+                            if (!placeholder)
                               return;
                             speakText(placeholder);
                           }
-                          function speakText(txt){
-                            try{
+                          function speakText(txt) {
+                            try {
                               let speech = new window.SpeechSynthesisUtterance(); speech.text = txt;
                               window.speechSynthesis.speak(speech);
-                            }catch(e){console.error("speakText", e)}
+                            } catch (e) { console.error("speakText", e) }
                           }
                         </script>
                         <!-- Items -->
                         <ul class="drop__items">
-                          <li class="drop__item itemSelected"><a href="javascript:void(0)" onclick="dropSelect(this, 'Выберите услугу')"><label for="target-drop-example">Выберите услугу</label></a></li>
-                          <li class="drop__item"><a href="javascript:void(0)" onclick="dropSelect(this, 'Консультация стоматолога', 'записаться на консультацию стоматолога')"><label for="target-drop-example">Консультация стоматолога</label></a></li>
-                          <li class="drop__item"><a href="javascript:void(0)" onclick="dropSelect(this, 'Терапия', 'записаться на терапию')"><label for="target-drop-example">Терапия</label></a></li>
-                          <li class="drop__item"><a href="javascript:void(0)" onclick="dropSelect(this, 'Удаление зубов', 'записаться на Удаление зубов')"><label for="target-drop-example">Удаление зубов</label></a></li>
-                          <li class="drop__item"><a href="javascript:void(0)" onclick="dropSelect(this, 'Имплантация', 'записаться на Имплантацию')"><label for="target-drop-example">Имплантация</label></a></li>
-                          <li class="drop__item"><a href="javascript:void(0)" onclick="dropSelect(this, 'ВИНИРЫ', 'записаться на установку виниров')"><label for="target-drop-example">ВИНИРЫ</label></a></li>
+                          <li class="drop__item itemSelected"><a href="javascript:void(0)"
+                              onclick="dropSelect(this, 'Выберите услугу')"><label for="target-drop-example">Выберите
+                                услугу</label></a></li>
+                          <li class="drop__item"><a href="javascript:void(0)"
+                              onclick="dropSelect(this, 'Консультация стоматолога', 'записаться на консультацию стоматолога')"><label
+                                for="target-drop-example">Консультация стоматолога</label></a></li>
+                          <li class="drop__item"><a href="javascript:void(0)"
+                              onclick="dropSelect(this, 'Терапия', 'записаться на терапию')"><label
+                                for="target-drop-example">Терапия</label></a></li>
+                          <li class="drop__item"><a href="javascript:void(0)"
+                              onclick="dropSelect(this, 'Удаление зубов', 'записаться на Удаление зубов')"><label
+                                for="target-drop-example">Удаление зубов</label></a></li>
+                          <li class="drop__item"><a href="javascript:void(0)"
+                              onclick="dropSelect(this, 'Имплантация', 'записаться на Имплантацию')"><label
+                                for="target-drop-example">Имплантация</label></a></li>
+                          <li class="drop__item"><a href="javascript:void(0)"
+                              onclick="dropSelect(this, 'ВИНИРЫ', 'записаться на установку виниров')"><label
+                                for="target-drop-example">ВИНИРЫ</label></a></li>
                         </ul>
                         <!-- Alternative to close dropdown with click out -->
                         <label for="target-drop-example" class="drop__closeOverlay"></label>
                       </label>
                     </div>
-  
-                    <div class="appointment__bottomInfoline">Отправляя заявку, вы соглашаетесь с 
-                      <a href="#">политикой конфиденциальности</a> данного сайта.</div>
-      
+
+                    <div class="appointment__bottomInfoline">Отправляя заявку, вы соглашаетесь с
+                      <a href="#">политикой конфиденциальности</a> данного сайта.
+                    </div>
+
                     <div class="bluLinkButton appointment__formButton"><a href="#">Отправить</a></div>
                   </form>
                 </div>
