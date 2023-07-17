@@ -37,7 +37,7 @@
   padding: 17px 0;
   padding-left: 64px;
   background: white;
-  transition: all 0.2s ease;
+  transition: all var(--transTime) ease;
   box-sizing: border-box;
   border-radius: 15px;
   border: 1px solid #D9D9D9;
@@ -62,7 +62,7 @@
   background-image: url(../img/ArrowDn.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  transition: transform 0.2s ease;
+  transition: transform var(--transTime) ease;
   right: 10px;
   top: 45%;
 }
@@ -72,7 +72,7 @@
   width: 100%;
   padding: 0;
   margin: 0;
-  transition: all 0.2s ease;
+  transition: all var(--transTime) ease;
   background: white;
   overflow: hidden;
   max-height: 0;
@@ -90,7 +90,7 @@
   text-decoration: none;
   padding: 0.6rem;
   padding-left: 20px;
-  transition: all 0.2s ease;
+  transition: all var(--transTime) ease;
 }
 @media (hover: hover) {
   .drop .drop__items .drop__item a:hover {

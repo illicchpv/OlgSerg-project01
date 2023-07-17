@@ -1,5 +1,5 @@
 // 03_drop from https://codepen.io/robsonklein23/pen/jOYyKVV?editors=1100
-// used 
+// used  var(--transTime)
 $transitionTime: 0.2s;
 // $lrPadding: 40px; 
 $controlLPadding: 64px;
@@ -77,7 +77,7 @@ $propGlob: 0;
     // padding-left: $controlLPadding;
     
     // background: $bgLight;
-    // transition: all $transitionTime ease;
+    // transition: all var(--transTime) ease;
     // box-sizing: border-box;
     position: relative;
     color: $controlTextColor;
@@ -87,7 +87,7 @@ $propGlob: 0;
     padding: 17px 0;
     padding-left: 64px;
     background: white;
-    transition: all 0.2s ease;
+    transition: all var(--transTime) ease;
     box-sizing: border-box;
     // width: 520px;
     border-radius: 15px;
@@ -113,7 +113,7 @@ $propGlob: 0;
       background-repeat:no-repeat;
       // background-position: center;
       background-size: contain;      
-      transition: transform $transitionTime ease;
+      transition: transform var(--transTime) ease;
       right: $arrowRPadding;
       top: 45%;
     }
@@ -126,7 +126,7 @@ $propGlob: 0;
     width: 100%;
     padding:0;
     margin:0;
-    transition: all $transitionTime ease;    
+    transition: all var(--transTime) ease;    
     background: $bgLight;
     // border-radius: 4px;
     overflow:hidden;
@@ -145,7 +145,7 @@ $propGlob: 0;
         padding: .6rem;
         padding-left: $listLPadding;
 
-        transition: all $transitionTime ease;
+        transition: all var(--transTime) ease;
         @media (hover: hover) {
           &:hover{
             color: $txtColor;

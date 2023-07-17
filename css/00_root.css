@@ -16,7 +16,8 @@
 }
 
 :root{
-  --trt: 0.5s; /* var(--trt) */
+  --trt: 0.3s; /* var(--trt) */
+  --transTime: 0.3s; /* var(--transTime) */
 }
 
 html{

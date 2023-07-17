@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/x-icon" href="./img/favicon/favicon.ico">
+  <!-- <link rel="icon" type="image/x-icon" href="./img/favicon/favicon.ico"> -->
   <!-- favicon  -->
-  <!-- <link rel="apple-touch-icon" sizes="192x192" href="img/favicon/android-chrome-192x192.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="img/favicon/android-chrome-192x192.png">
   <link rel="apple-touch-icon" sizes="512x512" href="img/favicon/android-chrome-512x512.png">
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
 
@@ -20,7 +20,7 @@
   <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
 
   <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff"> -->
+  <meta name="theme-color" content="#ffffff">
   <!-- /favicon  -->
 
   <title>Космодент | цены</title>
@@ -48,7 +48,7 @@
   <div class="container">
     <header class="header">
       <div class="header__infoRow">
-        <div class="logo"></div>
+        <a href="#"><span class="logo"></span></a>
         <div class="header__infoBlock">
           <div class="phoneInfo">
             <div class="phoneInfo__Label">Единый номер</div>
@@ -61,21 +61,24 @@
             <div class="socials__item"><a class="socials__item_wa" href="#">wa</a></div>
             <div class="socials__item"><a class="socials__item_tg" href="#">tg</a></div>
           </div>
-          <div class="bluLinkButton header__infoBtnEnter"><a href="#">Запись на приём</a></div>
+          <div class="bluLinkButton header__infoBtnEnter tst">
+            <a class="lvl2" href="#">Запись на приём</a>
+            <a href="#">Запись на приём</a>
+          </div>
         </div>
       </div>
 
       <div class="header__navRow">
         <nav>
           <ul class="navigation__list">
-            <li class="navigation__item"><a href="#">Главная</a></li>
-            <li class="navigation__item"><a href="#">О клинике</a></li>
-            <li class="navigation__item"><a href="#">Услуги</a></li>
-            <li class="navigation__item"><a href="#">Врачи</a></li>
-            <li class="navigation__item"><a href="#">Фото работ</a></li>
-            <li class="navigation__item"><a href="#">Статьи</a></li>
-            <li class="navigation__item"><a href="#">Отзывы</a></li>
-            <li class="navigation__item"><a href="#">Контакты</a></li>
+            <li class="navigation__item"><a href="#">Главная<span class="navigation__itemArrow"></span></a></li>
+            <li class="navigation__item"><a href="#">О клинике<span class="navigation__itemArrow"></span></a></li>
+            <li class="navigation__item"><a href="#">Услуги<span class="navigation__itemArrow navigation__itemArrow_selected"></span></a></li>
+            <li class="navigation__item"><a href="#">Врачи<span class="navigation__itemArrow"></span></a></li>
+            <li class="navigation__item"><a href="#">Фото работ<span class="navigation__itemArrow"></span></a></li>
+            <li class="navigation__item"><a href="#">Статьи<span class="navigation__itemArrow"></span></a></li>
+            <li class="navigation__item"><a href="#">Отзывы<span class="navigation__itemArrow"></span></a></li>
+            <li class="navigation__item"><a href="#">Контакты<span class="navigation__itemArrow"></span></a></li>
           </ul>
         </nav>
       </div>
@@ -272,9 +275,6 @@
                         </script>
                         <!-- Items -->
                         <ul class="drop__items">
-                          <!-- <li class="drop__item itemSelected"><a href="javascript:void(0)"
-                      onclick="dropSelect(this, 'Выберите услугу')"><label for="selectId">Выберите
-                        услугу</label></a></li> -->
                           <li class="drop__item"><a href="javascript:void(0)"
                               onclick="dropSelect(this, 'Консультация стоматолога', 'записаться на консультацию стоматолога')"><label
                                 for="selectId">Консультация стоматолога</label></a></li>
@@ -402,7 +402,7 @@
     <footer class="footer">
 
       <div class="logoBlock">
-        <div class="logo"></div>
+        <a href="#"><span class="logo"></span></a>
         <div class="copyr">Все права защищены © ООО «Космодент», 2018-2022</div>
         <div class="license"><a class="linkInText" href="#">Лицензия</a></div>
       </div>

@@ -60,92 +60,87 @@
       background-color: green;
     }
 
-    /* 
-    .inputFField:visited:invalid{
-    } */
-    /* .inputFField:focus:required:invalid {
-      color: red;
-      border-color: red;
-      box-shadow: 0 0 6px red !important; 
+    .formContainer3 {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-top: 40px;
+      padding-bottom: 40px;
     }
-    .inputFField:visited {
-      border-color: green;
-      box-shadow: 0 0 8px green !important;
-    } */
-
-    /* .inputFField:focus:required:valid,
-    .inputFField:focus:required:placeholder-shown {
-      border-color: green;
-      box-shadow: 0 0 8px green;
-    } */
   </style>
 
-  <!-- 
-<style>
-    .formContainer {
-      max-width: 600px;
-      margin: 0 auto;
-      margin-top: 50px;
-      background-color: aquamarine;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
+  <div class="formContainer3">
+    <style>
+      .aBtn{
+        position: relative;
+      }
+      .aBtn a{
+        display: inline-flex;
+        padding: 20px 30px 20px 30px;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+
+        border-radius: 35px;
+        background: linear-gradient(180deg, #00A0E3 0%, #004DC0 100%);
+        box-shadow: 0px 10px 20px 0px rgba(0, 160, 227, 0.30);
+
+        color: #FFF;
+        font-family: msaR1;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        white-space: nowrap;
+
+        transition: opacity var(--transTime);
+      }
+      .aBtn .lvl2{ 
+        z-index: 2; position: absolute; 
+        background: #004DC0;
+        opacity: 0; 
+      }
+      .aBtn:hover .lvl2{
+        opacity: 1;
+      }
+    </style>
+    <div class="aBtn"><a class="lvl2" href="#">[11111 на приём]</a><a href="#">[11111 на приём]</a></div>
+  </div>
+
+  <!-- <div class="formContainer3">
+    <style>
+    .tst {
+      margin-left: 40px;
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-image: url(img/social_wk.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: all var(--transTime);
     }
-    .subscribe-form-item1 {
-      font-weight: 700;
-      font-size: 16px;
-      letter-spacing: 0.03em;
-      color: #2B3541;
+    .tst:hover{
+      background-image: url(img/social_wk1.png);
     }
+    .tst_1{
+      background-image: url(img/social_wk1.svg);
+    }      
+    </style>
+    <a class="tst" href="#"></a>
+    <a class="tst tst_1" href="#"></a>
+  </div> -->
 
-    .inputFField {
-      width: 100%;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      padding-left: 26px;
-    }
-
-</style>
-    <form action="">
-    <div class="formContainer">
-
-      <div class="subscribe-form-item1">
-        <input id="inputNameTst" class="inputFldBase inputFField" placeholder="Ваше имя *" type="text" name="clientEMail" value=""
-          minlength="3" maxlength="30" tabindex="1">
-      </div>
-      <div class="subscribe-form-item1">
-        <input id="inputTelTst" class="inputFldBase inputFField" name="clientTel" value="" type="text"
-          pattern="[\d]{3} [\d]{3} [\d]{4}" placeholder="Телефон *      ### ### ####" autocomplete="off" tabindex="1">
-      </div>
-      <div class="subscribe-form-item1">
-        <input id="inputEmailTst" class="inputFldBase inputFField" placeholder="Почта" type="email" name="clientEMail" value=""
-          tabindex="1">
-      </div>
-
-      <script>
-        document.getElementById('inputTelTst').addEventListener('input', function (e) {
-          var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
-          e.target.value = !x[2] ? x[1] : '' + x[1] + ' ' + x[2] + (x[3] ? ' ' + x[3] : '');
-        });
-      </script>
-    </div>
-  </form>
-  <hr> -->
-
-  <div class="formContainer2">
+  <!-- <div class="formContainer2">
 
     <div class="appointment_form">
       <div class="appointment__row">
         <div class="appointment__formBlock">
           <form action="">
-            <!-- Ваше имя * -->
+            Ваше имя *
             <div class="inputField inputField_name appointment__formField ">
               <input id="inputName" class="inputFldBase inputFField" type="text" placeholder="Ваше имя *"
                 onblur="onBlureEl(this, 'inputFField', 'appointment__formButton')" required data-required="1"
                 autocomplete="off" minlength="3" maxlength="30">
             </div>
-            <!-- Телефон * -->
+            Телефон *
             <div class="inputField inputField_phone appointment__formField">
               <input id="inputTel" class="inputFldBase inputFField" type="text"
                 placeholder="Телефон *      ### ### ####"
@@ -158,19 +153,19 @@
                 });
               </script>
             </div>
-            <!-- Почта -->
+            Почта
             <div class="inputField inputField_mail appointment__formField">
               <input id="inputEmail" class="inputFldBase inputFField" type="email" placeholder="Почта"
                 onblur="onBlureEl(this, 'inputFField', 'appointment__formButton')" autocomplete="off"
                 pattern="^[^ ]+@[^ ]+\.[a-z]{2,6}$" maxlength="30">
             </div>
-            <!--Выберите услугу  -->
+            Выберите услугу 
             <div class="comunication__dropLine">
-              <!-- с использованием: https://codepen.io/robsonklein23/pen/jOYyKVV?editors=1100 -->
+              с использованием: https://codepen.io/robsonklein23/pen/jOYyKVV?editors=1100
               <label class="drop">
                 <input type="checkbox" class="inputFField" id="selectId" value="" data-customrequired="1">
-                <!-- Toggle Drop -->
-                <span class="drop__control" id="dropTarget">Выберите услугу</span> <!-- Fake button -->
+                Toggle Drop
+                <span class="drop__control" id="dropTarget">Выберите услугу</span>
                 <script>
                   function dropSelect(el, placeholder, speak) {
                     let items = el.parentElement.parentElement.querySelectorAll('.drop__item');
@@ -205,11 +200,8 @@
                     } catch (e) { console.error("speakText", e) }
                   }
                 </script>
-                <!-- Items -->
+                Items
                 <ul class="drop__items">
-                  <!-- <li class="drop__item itemSelected"><a href="javascript:void(0)"
-                      onclick="dropSelect(this, 'Выберите услугу')"><label for="selectId">Выберите
-                        услугу</label></a></li> -->
                   <li class="drop__item"><a href="javascript:void(0)"
                       onclick="dropSelect(this, 'Консультация стоматолога', 'записаться на консультацию стоматолога')"><label
                         for="selectId">Консультация стоматолога</label></a></li>
@@ -226,7 +218,7 @@
                       onclick="dropSelect(this, 'ВИНИРЫ', 'записаться на установку виниров')"><label
                         for="selectId">ВИНИРЫ</label></a></li>
                 </ul>
-                <!-- Alternative to close dropdown with click out -->
+                Alternative to close dropdown with click out
                 <label for="selectId" class="drop__closeOverlay"></label>
               </label>
             </div>
@@ -280,7 +272,7 @@
       </div>
     </div>
 
-  </div>
+  </div> -->
 
 </body>
 
