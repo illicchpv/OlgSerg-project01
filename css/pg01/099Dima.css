@@ -17,12 +17,12 @@
   position: absolute;
   top: 22px; right: 27px;
 
-  background-image: url(../../img/price_bl_0.svg);
+  background-image: url(../img/price_bl_0.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .prices__bl.prices__bl_1{
-  background-image: url(../../img/price_bl_1.svg);
+  background-image: url(../img/price_bl_1.svg);
 }
 
 .prices__penImg{

@@ -23,7 +23,7 @@
   content: '';
   position: absolute;
   display: block;
-  background-image: url(../../img/tel_trubka.svg);
+  background-image: url(../img/tel_trubka.svg);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -106,35 +106,35 @@
 }
 
 .socials__item_wk {
-  background-image: url(../../img/social_wk.png);
+  background-image: url(../img/social_wk.png);
   transition: background-image var(--transTime);
 }
 .socials__item_wk:hover{
-  background-image: url(../../img/social_wk1.png);
+  background-image: url(../img/social_wk1.png);
 }
 
 .socials__item_ok {
-  background-image: url(../../img/social_ok.png);
+  background-image: url(../img/social_ok.png);
   transition: background-image var(--transTime);
 }
 .socials__item_ok:hover {
-  background-image: url(../../img/social_ok1.png);
+  background-image: url(../img/social_ok1.png);
 }
 
 .socials__item_wa {
   transition: background-image var(--transTime);
-  background-image: url(../../img/social_wa.png);
+  background-image: url(../img/social_wa.png);
 }
 .socials__item_wa:hover {
-  background-image: url(../../img/social_wa1.png);
+  background-image: url(../img/social_wa1.png);
 }
 
 .socials__item_tg {
-  background-image: url(../../img/social_tg.png);
+  background-image: url(../img/social_tg.png);
   transition: background-image var(--transTime);
 }
 .socials__item_tg:hover {
-  background-image: url(../../img/social_tg1.png);
+  background-image: url(../img/social_tg1.png);
 }
 /* /.socials */
 
