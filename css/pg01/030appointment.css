@@ -41,7 +41,7 @@
   flex-shrink: 0;
 }
 .appointment__formBlock form{
-  width: 542px;
+  max-width: 542px;
   height: 418px;
   /* background-color: blueviolet; */
 }
