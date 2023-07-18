@@ -1,3 +1,13 @@
+/* .ahover для hover на ссылках */
+.ahover{text-decoration: none; color: #004DC0; transition: color var(--transTime);}
+.ahover:hover{color: #00A0E3;}
+/* /.ahover */
+
+/* .ahoverU для hover на ссылках  */
+.ahoverU{color: #004DC0; transition: color var(--transTime);}
+.ahoverU:hover{color: #00A0E3;}
+/* /.ahover */
+
 /* .blockTitle */
 .blockTitle {
   /* margin-bottom: 82px; */

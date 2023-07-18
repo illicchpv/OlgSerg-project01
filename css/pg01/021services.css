@@ -18,13 +18,23 @@
   height: 33px;
   position: absolute;
   top: 22px; right: 27px;
+  border-radius: 50%;
 
   background-image: url(../../img/price_bl_0.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 1;
+  transition: opacity var(--transTime), background-image var(--transTime);
+}
+.serviceItem__bl:hover{
+  opacity: .7;
 }
 .serviceItem__bl.serviceItem__bl_1{
   background-image: url(../../img/price_bl_1.svg);
+}
+.serviceItem__bl.serviceItem__bl_1:hover{
+  opacity: .3;
+  background-image: url(../../img/price_bl_0.svg);
 }
 
 .prices__penImg{

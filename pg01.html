@@ -61,7 +61,7 @@
             <div class="socials__item"><a class="socials__item_wa" href="#">wa</a></div>
             <div class="socials__item"><a class="socials__item_tg" href="#">tg</a></div>
           </div>
-          <div class="bluLinkButton header__infoBtnEnter tst">
+          <div class="bluLinkButton header__infoBtnEnter">
             <a class="lvl2" href="#">Запись на приём</a>
             <a href="#">Запись на приём</a>
           </div>
@@ -103,7 +103,7 @@
           <div class="serviceItem">
             <a class="serviceItem__bl " href="#"></a>
             <div class="serviceItem__block">
-              <h2 class="serviceItem__title">Консультация</h2>
+              <h2 class="serviceItem__title"><a class="ahover" href="#">Консультация</a></h2>
             </div>
           </div>
         </article>
@@ -112,7 +112,7 @@
           <div class="serviceItem">
             <a class="serviceItem__bl " href="#"></a>
             <div class="serviceItem__block">
-              <h2 class="serviceItem__title">Терапия</h2>
+              <h2 class="serviceItem__title"><a class="ahover" href="#">Терапия</a></h2>
             </div>
           </div>
         </article>
@@ -123,7 +123,7 @@
             <a class="serviceItem__bl serviceItem__bl_1" href="#"></a>
 
             <div class="serviceItem__block">
-              <h2 class="serviceItem__title">Удаление зубов</h2>
+              <h2 class="serviceItem__title"><a class="ahover" href="#">Удаление зубов</a></h2>
 
               <div class="serviceItem__len"><img src="./img/timer.svg" alt="timer"><span>Длительность до 60 минут</span>
               </div>
@@ -172,7 +172,7 @@
           <div class="serviceItem">
             <a class="serviceItem__bl " href="#"></a>
             <div class="serviceItem__block">
-              <h2 class="serviceItem__title">Имплантация</h2>
+              <h2 class="serviceItem__title"><a class="ahover" href="#">Имплантация</a></h2>
             </div>
           </div>
         </article>
@@ -181,7 +181,7 @@
           <div class="serviceItem">
             <a class="serviceItem__bl " href="#"></a>
             <div class="serviceItem__block">
-              <h2 class="serviceItem__title">ВИНИРЫ</h2>
+              <h2 class="serviceItem__title"><a class="ahover" href="#">ВИНИРЫ</a></h2>
             </div>
           </div>
         </article>
@@ -205,7 +205,7 @@
                   </h1>
 
                   <div class="appointment__topInfoline">Запишитесь на консультацию или прием <br>
-                    по телефону <a href="tel:+74912272008">+7 (4912) 272-008</a> или заполните форму</div>
+                    по телефону <a class="ahover" href="tel:+74912272008">+7 (4912) 272-008</a> или заполните форму</div>
 
                   <form action="">
                     <!-- Ваше имя * -->
@@ -297,17 +297,20 @@
                       </label>
                     </div>
 
-                    <div class="bluLinkButton appointment__formButton" style="display: none;"><a href="#"
-                        onclick="sendForm(event)">Отправить</a></div>
+                    <div class="bluLinkButton appointment__formButton" style="display: none;">
+                      <a class="lvl2" href="#" onclick="sendForm(event)">Отправить</a>
+                      <a href="#" onclick="sendForm(event)">Отправить</a>
+                    </div>
                     <div class="bluLinkButton appointment__formButton disabled" style="display: inline-block;"><a
-                        href="#" onclick="sendForm(event)">Отправить</a></div>
+                      href="#" onclick="sendForm(event)">Отправить</a></div>
 
                   </form>
                   <!-- script onBlureEl sendForm -->
                   <script>
                     function onBlureEl(el, fieldsClass, btnClass) {
+                      console.log('onBlureEl', el)
                       if (el)
-                        el.classList.contains('visitedI') ? el.classList.remove('visitedI') : el.classList.add('visitedI')
+                        el.classList.add('visitedI') //el.classList.contains('visitedI') ? el.classList.remove('visitedI') : el.classList.add('visitedI')
                       const fields = document.querySelectorAll("." + fieldsClass);
                       let valid = true
                       for (const fld of fields) {
@@ -383,7 +386,12 @@
                   <div class="socials__item"><a class="socials__item_tg" href="#">tg</a></div>
                 </div>
 
-                <div class="bluLinkButton  contacts__form_bluButton"><a href="#">Запись на приём</a></div>
+                <!-- <div class="bluLinkButton  contacts__form_bluButton"><a href="#">Запись на приём</a></div> -->
+                <div class="bluLinkButton header__infoBtnEnter">
+                  <a class="lvl2" href="#">Запись на приём</a>
+                  <a href="#">Запись на приём</a>
+                </div>
+
               </div>
 
             </div>
@@ -405,7 +413,7 @@
       <div class="logoBlock">
         <a href="#"><span class="logo"></span></a>
         <div class="copyr">Все права защищены © ООО «Космодент», 2018-2022</div>
-        <div class="license"><a class="linkInText" href="#">Лицензия</a></div>
+        <div class="license"><a class="linkInText ahoverU" href="#">Лицензия</a></div>
       </div>
 
       <ul class="navigation__list navigation__list_col">
@@ -421,10 +429,10 @@
 
       <div class="warningInfo">
         <div class="warningInfo__item">Возможны противопоказания к применению. Необходима консультация врача.</div>
-        <div class="warningInfo__item"><a class="linkInText" href="#">Политика конфиденциальности</a></div>
+        <div class="warningInfo__item"><a class="linkInText ahoverU" href="#">Политика конфиденциальности</a></div>
         <div class="warningInfo__item">
           Этот сайт защищен reCAPTCHA, и применяются
-          <a class="linkInText" href="#">Политика конфиденциальности и Условия использования Google</a>
+          <a class="linkInText ahoverU" href="#">Политика конфиденциальности и Условия использования Google</a>
         </div>
       </div>
 
@@ -439,7 +447,7 @@
       <div class="moreInfos">
         <div class="designStudio">
           <div class="designStudio__logo"></div>
-          <div class="designStudio__info"><a class="linkInText" href="#">Создание сайта</a> — <br>
+          <div class="designStudio__info"><a class="linkInText ahoverU" href="#">Создание сайта</a> — <br>
             студия «Галактика»</div>
         </div>
         <div class="pageStatistic"><a class="linkInText" href="#"></a></div>

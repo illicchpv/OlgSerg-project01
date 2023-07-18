@@ -12,5 +12,5 @@
 .inputFldBase:focus {
   color: #6c6c6c;
   /* border: 3px solid #FBF138; */
-  box-shadow: 0 0 10px #0022aa inset
+  box-shadow: 0 0 4px #0022aa inset
 }
