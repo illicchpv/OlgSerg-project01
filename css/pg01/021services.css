@@ -37,8 +37,7 @@
   background-image: url(../../img/price_bl_0.svg);
 }
 
-.prices__penImg{
-}
+/* .prices__penImg{} */
 
 .serviceItem__block {
   padding-left: 23px;
@@ -77,7 +76,7 @@
   display: inline-block;
 }
 
-.serviceItem__len::before {}
+/* .serviceItem__len::before {} */
 
 .serviceItem__items{
   display: flex;
