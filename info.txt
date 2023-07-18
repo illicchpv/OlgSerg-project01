@@ -19,7 +19,8 @@
     // https://www.figma.com/file/3QzyLidrLL1NiphdR6YdFU/Untitled?type=design&node-id=0-1&mode=design&t=ObYOK6naWj0bXQVc-0
 
 
-Тег <wbr> указывает браузеру место, где допускается делать перенос строки
+Тег <wbr> указывает браузеру место, где допускается делать перенос строки 
+//  style="white-space: nowrap;"
 
 проект на github
   https://github.com/illicchpv/OlgSerg-project01
